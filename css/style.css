@@ -143,6 +143,7 @@ span {
 
 .btn:hover {
   box-shadow: none;
+  transform: scale(1.06);
 }
 
 .about {
@@ -288,4 +289,74 @@ span {
 }
 .portfolio .portfolio-container .portfolio-box:hover .portfolio-layer {
   transform: translateY(0);
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2.5rem 0rem;
+}
+.contact h2 {
+  margin-bottom: 3rem;
+}
+.contact form {
+  max-width: 70rem;
+  margin: 1rem auto;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.contact form .input-box {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.contact form .input-box input,
+.contact form textarea {
+  width: 100%;
+  padding: 1.5rem;
+  font-size: 1.6rem;
+  color: #fff;
+  background: #323946;
+  border-radius: 0.8rem;
+  margin: 0.7rem 0;
+  resize: none;
+}
+
+.contact form .input-box input {
+  width: 49%;
+}
+
+.contact form .btn {
+  margin-top: 2rem;
+  cursor: pointer;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 2rem 9%;
+  background: #323946;
+}
+footer .footer-text p {
+  font-size: 1.6rem;
+}
+footer .footer-icon-top a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.8rem;
+  background: #0ef;
+  border-radius: 0.8rem;
+  transition: all 0.3s ease-out;
+}
+footer .footer-icon-top a i {
+  font-size: 2.4rem;
+  color: #323946;
+}
+footer .footer-icon-top a:hover {
+  box-shadow: 0 0 1rem #0ef;
 }/*# sourceMappingURL=style.css.map */
