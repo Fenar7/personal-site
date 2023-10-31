@@ -60,6 +60,17 @@ section {
   color: #0ef;
 }
 
+.heading {
+  font-size: 5.6rem;
+}
+.heading span {
+  color: #0ef;
+}
+
+span {
+  color: #0ef;
+}
+
 #menu-icon {
   font-size: 3.6rem;
   color: #fff;
@@ -142,6 +153,7 @@ section {
   align-items: center;
   gap: 7rem;
   background-color: #323946;
+  padding-top: 20px;
 }
 .about .about-img {
   overflow: hidden;
@@ -155,12 +167,6 @@ section {
   -o-object-fit: cover;
      object-fit: cover;
 }
-.about .about-content .heading {
-  font-size: 5.6rem;
-}
-.about .about-content .heading span {
-  color: #0ef;
-}
 .about .about-content h3 {
   font-size: 2rem;
   margin-bottom: 1rem;
@@ -169,4 +175,117 @@ section {
   font-size: 1.5rem;
   line-height: 3rem;
   margin-bottom: 1rem;
+}
+
+.services {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.services h2 {
+  margin-bottom: 5rem;
+}
+
+.services-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.services-container .services-box {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 30rem;
+  background: #323946;
+  padding: 3rem 2rem 4rem;
+  border-radius: 2rem;
+  text-align: center;
+  border: 0.2rem solid #1f242d;
+  height: 50rem;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease-out;
+}
+.services-container .services-box p {
+  font-size: 1.6rem;
+  margin: 1rem 0rem 3rem;
+}
+.services-container .services-box h3 {
+  font-size: 2.6rem;
+}
+.services-container .services-box i {
+  font-size: 7rem;
+  color: #0ef;
+}
+.services-container .services-box:hover {
+  border: none;
+  box-shadow: 0 0 1rem #0ef;
+  transform: scale(1.04);
+}
+
+.portfolio {
+  background: #323946;
+}
+.portfolio h2 {
+  margin-bottom: 4rem;
+}
+.portfolio .portfolio-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  gap: 2.5rem;
+}
+.portfolio .portfolio-container .portfolio-box {
+  position: relative;
+  border-radius: 2rem;
+  box-shadow: 0 0 1rem #1f242d;
+  overflow: hidden;
+  display: flex;
+}
+.portfolio .portfolio-container .portfolio-box img {
+  width: 350px;
+  transition: all 0.3s ease-out;
+}
+.portfolio .portfolio-container .portfolio-box .portfolio-layer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.1), #0ef);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transform: translateY(100%);
+  transition: all 0.3s ease-out;
+}
+.portfolio .portfolio-container .portfolio-box .portfolio-layer h4 {
+  font-size: 2.6rem;
+}
+.portfolio .portfolio-container .portfolio-box .portfolio-layer p {
+  font-size: 1.6rem;
+  margin: 0rem 1rem;
+  text-align: center;
+}
+.portfolio .portfolio-container .portfolio-box .portfolio-layer a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 5rem;
+  height: 5rem;
+  background: #fff;
+  border-radius: 50%;
+}
+.portfolio .portfolio-container .portfolio-box .portfolio-layer a i {
+  font-size: 2rem;
+  color: #323946;
+}
+.portfolio .portfolio-container .portfolio-box:hover img {
+  transform: scale(1.1);
+}
+.portfolio .portfolio-container .portfolio-box:hover .portfolio-layer {
+  transform: translateY(0);
 }/*# sourceMappingURL=style.css.map */

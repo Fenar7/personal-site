@@ -62,6 +62,17 @@ section{
     color: $main-color;
 }
 
+.heading{
+    font-size: 5.6rem;
+    span{
+        color: $main-color;
+    }
+}
+
+span{
+    color: $main-color;
+}
+
 #menu-icon{
     font-size: 3.6rem;
     color: $text-color;
@@ -154,6 +165,7 @@ section{
     align-items: center;
     gap: 7rem;
     background-color: $secondary-bg-color;
+    padding-top: 20px;
     .about-img{
         overflow: hidden;
         img{
@@ -167,12 +179,6 @@ section{
     }
 
     .about-content{
-        .heading{
-            font-size: 5.6rem;
-            span{
-                color: $main-color;
-            }
-        }
         h3{
             font-size: 2rem;
             margin-bottom: 1rem;
@@ -181,6 +187,142 @@ section{
             font-size: 1.5rem;
             line-height: 3rem;
             margin-bottom: 1rem;
+        }
+    }
+}
+
+
+.services{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.services h2{
+    margin-bottom: 5rem;
+}
+
+.services-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+
+    .services-box{
+        display: flex;
+        flex-direction: column;
+        flex: 1 1 30rem;
+        background: $secondary-bg-color;
+        padding: 3rem 2rem 4rem;
+        border-radius: 2rem;
+        text-align: center;
+        border: .2rem solid $bg-color;
+        height: 50rem;
+        align-items: center;
+        justify-content: center;
+
+        p{
+            font-size: 1.6rem;
+            margin: 1rem 0rem 3rem;
+        }
+
+        h3{
+            font-size: 2.6rem;
+        }
+
+        i{
+            font-size: 7rem;
+            color: $main-color;
+        }
+
+        transition: all .2s ease-out;
+    }
+
+    .services-box:hover{
+        border: none;
+        box-shadow: 0 0 1rem $main-color;
+        transform: scale(1.04);
+    }
+}
+
+
+.portfolio{
+    background: $secondary-bg-color;
+    
+    h2{
+        margin-bottom: 4rem;
+    }
+
+    .portfolio-container{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        align-items: center;
+        gap: 2.5rem;
+
+        .portfolio-box{
+            img{
+                width: 350px;
+                transition: all 0.3s ease-out;
+            }
+
+            position: relative;
+            border-radius: 2rem;
+            box-shadow: 0 0 1rem $bg-color;
+            overflow: hidden;
+            display: flex;
+
+            .portfolio-layer{
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: linear-gradient(rgba(0,0,0,.1),$main-color);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                transform: translateY(100%);
+
+                h4{
+                    font-size: 2.6rem;
+                }
+
+                p{
+                    font-size: 1.6rem;
+                    margin: 0rem  1rem;
+                    text-align: center;
+                }
+
+                a{
+                    display: inline-flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 5rem;
+                    height: 5rem;
+                    background: $text-color;
+                    border-radius: 50%;
+
+                    i{
+                        font-size: 2rem;
+                        color: $secondary-bg-color;
+                    }
+                }
+
+                transition: all .3s ease-out;
+            }
+        }
+
+        .portfolio-box:hover{
+            img{
+                transform: scale(1.1);
+            }
+
+            .portfolio-layer{
+                transform: translateY(0);
+            }
         }
     }
 }
